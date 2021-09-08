@@ -14,3 +14,4 @@
   - Almost the ultimate resource on prime numbers https://primes.utm.edu/
   - Details of Miller–Rabin primality test https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test A good read
 
+- Interestingly, the Python had built-in support for big integers so the modulo operation of big primes are handled without fuss by `pow()`. In C++, one will need library support such as [GMP](https://gmplib.org/), and [some Github repos](https://github.com/search?l=C%2B%2B&q=big+integer&type=Repositories). Rust had [big int library](https://github.com/rust-num/num-bigint) too. [This paper](https://secure-media.collegeboard.org/apc/ap01.pdf.lr_7928.pdf) had internal explanation of big ints in C++.
