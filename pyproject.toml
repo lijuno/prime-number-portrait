@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prime-portrait"
+version = "1.0.0"
+description = "Turn a photo into a picture made of the digits of a prime number"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [{ name = "Lijun" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "Pillow>=9.2",
+    "scikit-learn>=1.2",
+]
+keywords = ["prime", "primes", "generative-art", "image", "math-art"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Artistic Software",
+    "Topic :: Scientific/Engineering :: Mathematics",
+]
+
+[project.urls]
+Homepage = "https://github.com/lijuno/prime-number-portrait"
+
+[project.scripts]
+prime-portrait = "prime_portrait.cli:main"
+
+[project.optional-dependencies]
+dev = ["pytest", "ruff"]
+
+[tool.setuptools]
+packages = ["prime_portrait"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B"]

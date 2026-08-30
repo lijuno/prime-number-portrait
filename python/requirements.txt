@@ -1,7 +1,0 @@
-numpy
-scipy
-matplotlib
-image
-Pillow
-scikit-image
-scikit-learn
