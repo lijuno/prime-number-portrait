@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+
+# Personal photos and generated portraits (keep them out of the public repo;
+# the committed files under examples/ are explicitly allowed below)
+*.jpg
+*.jpeg
+*.png
+*.heic
+*.HEIC
+*-prime.png
+!examples/*.png
